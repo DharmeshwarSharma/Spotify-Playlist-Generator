@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link rel="stylesheet" href="style2.css" />
+            <title>Spotify Playlist Generator</title>
+        </head>
+        
+        <body >
+
+            <div class="Box1">
+                <a href="https://open.spotify.com/" ><img src="Spotify.png" height="100px" width="110px" style="position:absolute;left: 300px;" ></a>
+                <h1 id="login" data-text="Spotify Playlist Generator">Spotify Playlist Generator</h1></div>
+            <div class="Box2">
+
+                <!-- Don't touch start -->
+                  <form method="post" action="/callback">
+                      <table>
+                          <tr>
+                              <td><h3>Enter number of Songs:</h3></td>
+                              <td><input type="number" class=" inpbox" id="Songnum" name="Songnum" style="height:60px;width:60px;"></Td>
+                              </tr>
+                              <tr>
+                                  <td ><h3>Genre List:</h3></td>
+                                  <td >
+                                    <ol>
+                                      <li>Rock</li>
+                                      <li>Lo-fi</li>
+                                      <li>Pop</li>
+                                      <li>Indian Classical</li>
+                                      <li>Rap</li>
+                                      <li>Desi Hip Hop</li>
+                                      <li>EDM</li>
+                                      <li>Alt Z</li>
+                                      <li>Hip Hop</li>
+                                      <li>Pixel</li>
+                                    </ol>
+                                  </Td>
+                              </tr>
+                              <tr >
+                                  <td>Enter Genre Number:</td>
+                                  <td><input class=" inpbox"  name="Genre" type="text" style="height:50px;width:300px;" ></td>
+                              </tr>
+                              <tr colspan="2">
+                                <td></td>
+                              </tr>
+                              <tr colspan="2">
+                                  <td style="align-items: center;"><input type="Submit" class="buttons" style="position:relative;left:70px;height:50px;width:200px; font-size:x-large;border:0;background:#1DB954;color:white;border-radius:40px;"> <input type="Reset" class="buttons2" style=" position:relative;left:270px ;height:50px;width:200px; font-size:x-large;border:0;background:#535252;color:white;border-radius:40px;"></Td>
+                                  </tr>
+                                  
+                                      </table>
+                                  </form>
+                                  <script src="api.js"></script>
+                                  <!-- Don't Touch end -->
+            </div>
+        </body>
+
+</html>

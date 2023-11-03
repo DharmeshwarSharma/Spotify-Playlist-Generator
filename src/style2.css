@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+
+}
+h1 {
+    position:absolute;
+    font-size: 3vw;
+    color:#08f127;
+    text-transform:uppercase;
+
+}
+h1::before{
+    content: attr(data-text);
+    position:absolute;
+    top:0;
+    left:0;
+    width: 0;
+    height: 100%;
+    color:white;
+    -webkit-text-stroke: 0vw #383d52;
+    border-right: 2px solid #01fe87;
+    overflow:hidden;
+    animation:animate 3.5s linear 1 ;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animate {
+    0%
+    {
+        width:0;
+    }
+    70%,100%{
+        width:100%;
+    }
+    
+}
+
+
+div.Box1{
+    margin:0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+}
+
+div.Box2{
+    display: flex;
+    position: relative;
+    justify-content:center ;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+
+img {
+    top:0;
+    left:0;
+    padding-right:10px ;
+}
+h3 {
+    font-size:30px;
+    color:white;
+}
+td {
+    padding-top: 2%;
+    padding-left: 2%;
+    color:white;
+    font-size: 30px;
+    align-items: right;
+    width:450px;
+
+}
+td:nth-child(odd){
+    text-align: left;
+}
+td.button {
+    padding-top: 2%;
+    padding-left: 20%;
+    color:white;
+    font-size: 30px;
+    align-items: right;
+}
+input:hover.buttons{
+
+    box-shadow: 0 0 5px #00ff04,
+                0 0 25px #00ff04,
+                0 0 50px #00ff04;
+    
+    animation-name: animate2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+input:hover.buttons2{
+
+    box-shadow: 0 0 5px #535252,
+                0 0 25px #535252,
+                0 0 50px #535252;
+    
+    animation-name: animate2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+@keyframes animate2{
+    0%{
+        transform: scale(1,1)
+    }
+    
+    100%{
+        transform: scale(1.2,1.2);
+    }
+    
+}
+
+input.inpbox{
+    border-radius: 40px;
+    font-family: "press start 2p";
+    font-size:20px;
+}
+
+html {
+    --s: 100px; /* control the size */
+    --c1: #16173b;
+    --c2: #121528;
+    
+    --_s: calc(2*var(--s)) calc(2*var(--s));
+    --_g: var(--_s) conic-gradient(at 40% 40%,#0000 75%,var(--c1) 0);
+    --_p: var(--_s) conic-gradient(at 20% 20%,#0000 75%,var(--c2) 0);
+    background:
+      calc( .9*var(--s)) calc( .9*var(--s))/var(--_p),
+      calc(-.1*var(--s)) calc(-.1*var(--s))/var(--_p),
+      calc( .7*var(--s)) calc( .7*var(--s))/var(--_g),
+      calc(-.3*var(--s)) calc(-.3*var(--s))/var(--_g),
+      conic-gradient(from 90deg at 20% 20%,var(--c2) 25%,var(--c1) 0) 
+       0 0/var(--s) var(--s);
+    animation: m 3s infinite;
+  }
+  @keyframes m {
+    0% {
+     background-position: 
+      calc( .9*var(--s)) calc( .9*var(--s)),
+      calc(-.1*var(--s)) calc(-.1*var(--s)),
+      calc( .7*var(--s)) calc( .7*var(--s)),
+      calc(-.3*var(--s)) calc(-.3*var(--s)),0 0
+    }
+    25% {
+     background-position: 
+      calc(1.9*var(--s)) calc( .9*var(--s)),
+      calc(-1.1*var(--s)) calc(-.1*var(--s)),
+      calc(1.7*var(--s)) calc( .7*var(--s)),
+      calc(-1.3*var(--s)) calc(-.3*var(--s)),0 0
+    }
+    50% {
+     background-position: 
+      calc(1.9*var(--s)) calc(-.1*var(--s)),
+      calc(-1.1*var(--s)) calc( .9*var(--s)),
+      calc(1.7*var(--s)) calc(-.3*var(--s)),
+      calc(-1.3*var(--s)) calc( .7*var(--s)),0 0
+    }
+    75% {
+     background-position: 
+      calc(2.9*var(--s)) calc(-.1*var(--s)),
+      calc(-2.1*var(--s)) calc( .9*var(--s)),
+      calc(2.7*var(--s)) calc(-.3*var(--s)),
+      calc(-2.3*var(--s)) calc( .7*var(--s)),0 0
+    }
+    100% {
+     background-position: 
+      calc(2.9*var(--s)) calc(-1.1*var(--s)),
+      calc(-2.1*var(--s)) calc(1.9*var(--s)),
+      calc(2.7*var(--s)) calc(-1.3*var(--s)),
+      calc(-2.3*var(--s)) calc(1.7*var(--s)),0 0
+    }
+  }
