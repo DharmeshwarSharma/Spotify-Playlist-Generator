@@ -2,8 +2,8 @@ const querystring = require('querystring');
 // const Buffer = require('buffer').Buffer;
 // const fetch = require('node-fetch');
 
-var client_id = '211393e0459a4506a4547f4c17991fa9';
-var client_secret = 'e43fcc63e293433d9a63c6499e6c05c2';
+var client_id = 'id';
+var client_secret = 'secret';
 var redirect_uri = 'http://localhost:8888/callback';
 
 exports.getAuthLink =  function() {
